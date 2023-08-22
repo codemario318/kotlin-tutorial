@@ -1,7 +1,5 @@
 package com.mario.kotlintutorial
 
-import ArticleRepository
-import UserRepository
 import org.springframework.boot.ApplicationRunner
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
