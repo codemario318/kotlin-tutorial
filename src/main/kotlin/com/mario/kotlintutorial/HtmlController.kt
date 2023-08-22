@@ -1,6 +1,5 @@
 package com.mario.kotlintutorial
 
-import ArticleRepository
 import format
 import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Controller
