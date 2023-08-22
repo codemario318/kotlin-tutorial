@@ -2,7 +2,7 @@ import com.mario.kotlintutorial.Article
 import com.mario.kotlintutorial.User
 import org.springframework.data.repository.CrudRepository
 
-interface Repositories : CrudRepository<Article, Long> {
+interface ArticleRepository : CrudRepository<Article, Long> {
     fun findBySlug(slug: String): Article?
     fun findAllByOrderByAddedAtDesc(): Iterable<Article>
 }
