@@ -1,5 +1,5 @@
-import com.mario.kotlintutorial.Article
-import com.mario.kotlintutorial.User
+package com.mario.kotlintutorial
+
 import org.springframework.data.repository.CrudRepository
 
 interface ArticleRepository : CrudRepository<Article, Long> {
