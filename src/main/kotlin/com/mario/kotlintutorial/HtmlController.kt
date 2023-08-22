@@ -30,7 +30,7 @@ class HtmlController(private val repository: ArticleRepository) {
         return "article"
     }
 
-    fun Article.render() = RenderArticle(
+    fun Article.render() = RenderedArticle(
         slug,
         title,
         headline,
@@ -39,7 +39,7 @@ class HtmlController(private val repository: ArticleRepository) {
         addedAt.format()
     )
 
-    data class RenderArticle(
+    data class RenderedArticle(
         val slug: String,
         val title: String,
         val headline: String,
