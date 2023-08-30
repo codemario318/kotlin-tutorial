@@ -7,6 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.server.ResponseStatusException
 
+
+@RestController
+@RequestMapping("/api/hello")
+class HelloController {
+    @GetMapping("/")
+    fun hello() = "Hello"
+}
+
 @RestController
 @RequestMapping("/api/article")
 class ArticleController(private val repository: ArticleRepository) {

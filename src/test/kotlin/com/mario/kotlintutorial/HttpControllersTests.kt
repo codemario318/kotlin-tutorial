@@ -51,4 +51,11 @@ class HttpControllersTests(@Autowired val mockMvc: MockMvc) {
             .andExpect(jsonPath("\$.[0].login").value(johnDoe.login))
             .andExpect(jsonPath("\$.[1].login").value(janeDoe.login))
     }
+
+    @Test
+    fun `Hello Test`() {
+        mockMvc.perform(get("/api/hello/").accept(MediaType.APPLICATION_JSON))
+            .andExpect(status().isOk)
+            .andExpect(content().string("Hello"))
+    }
 }
