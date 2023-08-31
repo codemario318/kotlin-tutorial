@@ -13,6 +13,12 @@ import org.springframework.web.server.ResponseStatusException
 class HelloController {
     @GetMapping("/")
     fun hello() = "Hello"
+
+    @GetMapping("/test")
+    fun helloTest(): String {
+        println("test")
+        return "test"
+    }
 }
 
 @RestController
